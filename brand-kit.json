@@ -1,0 +1,158 @@
+{
+  "brand": {
+    "name": "Tâmara Cavalcante Organizer",
+    "tagline": "Personal Organizer",
+    "description": "Organização de ambientes com sofisticação e método. Closets, cozinhas, escritórios e mudanças.",
+    "website": "",
+    "industry": "Personal Organizer / Home Organization"
+  },
+  "colors": {
+    "primary": {
+      "name": "Azul Royal",
+      "hex": "#2C59C6",
+      "rgb": { "r": 44, "g": 89, "b": 198 },
+      "cmyk": { "c": 78, "m": 55, "y": 0, "k": 22 }
+    },
+    "secondary": {
+      "name": "Dourado",
+      "hex": "#705328",
+      "rgb": { "r": 112, "g": 83, "b": 40 },
+      "cmyk": { "c": 0, "m": 26, "y": 64, "k": 56 }
+    },
+    "accent": {
+      "name": "Marrom Âmbar",
+      "hex": "#5E300A",
+      "rgb": { "r": 94, "g": 48, "b": 10 },
+      "cmyk": { "c": 0, "m": 49, "y": 89, "k": 63 }
+    },
+    "dark": {
+      "name": "Preto Quente",
+      "hex": "#1B1B1A",
+      "rgb": { "r": 27, "g": 27, "b": 26 }
+    },
+    "dark_blue": {
+      "name": "Azul Profundo",
+      "hex": "#23385B",
+      "rgb": { "r": 35, "g": 56, "b": 91 }
+    },
+    "light": {
+      "name": "Creme",
+      "hex": "#F2F3EE",
+      "rgb": { "r": 242, "g": 243, "b": 238 }
+    },
+    "white": {
+      "name": "Branco",
+      "hex": "#FFFFFF",
+      "rgb": { "r": 255, "g": 255, "b": 255 }
+    }
+  },
+  "typography": {
+    "primary": {
+      "family": "Sofia Pro",
+      "fallback": "Cormorant Garamond, Georgia, serif",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap",
+      "weights": ["Light", "Regular", "Medium", "SemiBold", "Bold"],
+      "usage": "Títulos, logotipo, display text"
+    },
+    "secondary": {
+      "family": "Myriad Pro",
+      "fallback": "Raleway, Helvetica Neue, sans-serif",
+      "google_fonts_url": "https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap",
+      "weights": ["Light", "Regular", "Medium", "SemiBold", "Bold"],
+      "usage": "Corpo de texto, UI, legendas"
+    }
+  },
+  "logos": {
+    "primary": {
+      "description": "Logo vertical colorido (azul + dourado)",
+      "file": "logos/logo-vertical-color.png",
+      "background": "light"
+    },
+    "primary_dark": {
+      "description": "Logo vertical preto",
+      "file": "logos/logo-vertical-black.png",
+      "background": "light"
+    },
+    "primary_white": {
+      "description": "Logo vertical branco (negativo)",
+      "file": "logos/logo-vertical-white.png",
+      "background": "dark"
+    },
+    "horizontal": {
+      "description": "Logo horizontal colorido",
+      "file": "logos/logo-horizontal-color.png",
+      "background": "light"
+    },
+    "horizontal_dark": {
+      "description": "Logo horizontal preto",
+      "file": "logos/logo-horizontal-black.png",
+      "background": "light"
+    },
+    "horizontal_white": {
+      "description": "Logo horizontal branco (negativo)",
+      "file": "logos/logo-horizontal-white.png",
+      "background": "dark"
+    },
+    "horizontal_filete": {
+      "description": "Logo horizontal com filete colorido",
+      "file": "logos/logo-horizontal-filete-color.png",
+      "background": "light"
+    },
+    "horizontal_filete_dark": {
+      "description": "Logo horizontal com filete preto",
+      "file": "logos/logo-horizontal-filete-black.png",
+      "background": "light"
+    },
+    "horizontal_filete_white": {
+      "description": "Logo horizontal com filete branco",
+      "file": "logos/logo-horizontal-filete-white.png",
+      "background": "dark"
+    }
+  },
+  "patterns": {
+    "gold_arabesque": {
+      "description": "Padronagem arabesco dourado",
+      "file": "patterns/pattern-gold.png"
+    },
+    "blue_tile": {
+      "description": "Azulejo português com chave da marca",
+      "file": "patterns/pattern-tile.png"
+    }
+  },
+  "brand_voice": {
+    "tone": ["Elegante", "Sofisticada", "Confiável", "Metódica"],
+    "personality": "Premium e acolhedora. Transmite transformação de ambientes com cuidado artesanal e visão profissional.",
+    "keywords": ["organização", "sofisticação", "método", "transformação", "closet", "personal organizer"]
+  },
+  "platform_settings": {
+    "heygen": {
+      "brand_color": "#2C59C6",
+      "accent_color": "#705328",
+      "background_color": "#F2F3EE",
+      "text_color": "#1B1B1A",
+      "logo_file": "logos/logo-horizontal-color.png",
+      "watermark_file": "logos/logo-horizontal-filete-color.png"
+    },
+    "canva": {
+      "brand_colors": ["#2C59C6", "#705328", "#5E300A", "#23385B", "#1B1B1A", "#F2F3EE"],
+      "font_heading": "Cormorant Garamond",
+      "font_body": "Raleway"
+    }
+  },
+  "video_guidelines": {
+    "intro_logo": "logos/logo-vertical-color.png",
+    "lower_third_logo": "logos/logo-horizontal-color.png",
+    "watermark_logo": "logos/logo-horizontal-filete-color.png",
+    "background_pattern": "patterns/pattern-gold.png",
+    "safe_area_percentage": 80,
+    "recommended_background": "#F2F3EE",
+    "text_on_dark": "#FFFFFF",
+    "text_on_light": "#1B1B1A"
+  },
+  "_meta": {
+    "version": "1.0",
+    "created": "2026-06-24",
+    "format": "Brand Kit JSON",
+    "compatible_with": ["HeyGen", "Canva", "Adobe Express", "CapCut", "Piktochart", "Veed.io"]
+  }
+}

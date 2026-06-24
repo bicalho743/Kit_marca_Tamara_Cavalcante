@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tâmara Cavalcante Organizer — Identidade Visual</title>
+    <meta name="description" content="Tâmara Cavalcante Personal Organizer. Organização de ambientes, closets, cozinhas e mudanças com sofisticação e método.">
+    <meta name="theme-color" content="#2C59C6">
+    <meta name="brand-name" content="Tâmara Cavalcante Organizer">
+    <meta name="brand-primary-color" content="#2C59C6">
+    <meta name="brand-secondary-color" content="#705328">
+    <meta name="brand-accent-color" content="#5E300A">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tâmara Cavalcante Organizer">
+    <meta property="og:description" content="Personal Organizer — Organização com sofisticação e método">
+    <meta property="og:image" content="logos/logo-vertical-color.png">
+    <meta property="og:type" content="website">
+
+    <!-- Brand Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* Brand Colors */
+            --brand-blue: #2C59C6;
+            --brand-blue-light: #4A73D4;
+            --brand-blue-dark: #23385B;
+            --brand-gold: #705328;
+            --brand-gold-dark: #5E300A;
+            --brand-gold-light: #8B6A3E;
+            --brand-black: #1B1B1A;
+            --brand-white: #F2F3EE;
+            --brand-gray: #595A5C;
+            --brand-cream: #FAF8F5;
+
+            /* Typography */
+            --font-display: 'Cormorant Garamond', 'Georgia', serif;
+            --font-body: 'Raleway', 'Helvetica Neue', sans-serif;
+
+            /* Spacing */
+            --space-xs: 0.5rem;
+            --space-sm: 1rem;
+            --space-md: 2rem;
+            --space-lg: 4rem;
+            --space-xl: 6rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--brand-cream);
+            color: var(--brand-black);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--brand-cream) 0%, #E8E6E0 50%, var(--brand-cream) 100%);
+            position: relative;
+            padding: var(--space-lg);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('patterns/pattern-gold.png');
+            background-size: 400px;
+            background-repeat: repeat;
+            opacity: 0.04;
+            pointer-events: none;
+        }
+
+        .hero-logo {
+            width: 280px;
+            height: auto;
+            margin-bottom: var(--space-md);
+            filter: drop-shadow(0 4px 20px rgba(44, 89, 198, 0.08));
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-tagline {
+            font-family: var(--font-display);
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 300;
+            color: var(--brand-gold);
+            letter-spacing: 0.35em;
+            text-transform: uppercase;
+            text-align: center;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero-divider {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--brand-gold), transparent);
+            margin: var(--space-md) 0;
+            animation: fadeInUp 1s ease-out 0.5s both;
+        }
+
+        .hero-subtitle {
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--brand-gray);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            animation: fadeInUp 1s ease-out 0.7s both;
+        }
+
+        /* ===== SECTION LAYOUT ===== */
+        section {
+            padding: var(--space-xl) var(--space-lg);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.8rem);
+            font-weight: 400;
+            color: var(--brand-black);
+            text-align: center;
+            margin-bottom: var(--space-xs);
+            letter-spacing: 0.08em;
+        }
+
+        .section-subtitle {
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--brand-gold);
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: var(--space-lg);
+        }
+
+        /* ===== LOGO GRID ===== */
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+
+        .logo-card {
+            background: white;
+            border-radius: 16px;
+            padding: var(--space-lg) var(--space-md);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 40px rgba(44, 89, 198, 0.1);
+        }
+
+        .logo-card.dark {
+            background: var(--brand-black);
+        }
+
+        .logo-card.blue {
+            background: var(--brand-blue);
+        }
+
+        .logo-card img {
+            max-width: 200px;
+            max-height: 180px;
+            object-fit: contain;
+        }
+
+        .logo-card .label {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--brand-gray);
+            margin-top: var(--space-sm);
+        }
+
+        .logo-card.dark .label,
+        .logo-card.blue .label {
+            color: rgba(255,255,255,0.6);
+        }
+
+        /* ===== COLOR PALETTE ===== */
+        .palette-section {
+            background: white;
+            border-radius: 24px;
+            padding: var(--space-lg);
+            box-shadow: 0 2px 40px rgba(0,0,0,0.04);
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .color-swatch {
+            text-align: center;
+        }
+
+        .color-swatch .swatch {
+            width: 100%;
+            aspect-ratio: 1;
+            border-radius: 16px;
+            margin-bottom: var(--space-sm);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .color-swatch .swatch:hover {
+            transform: scale(1.05);
+        }
+
+        .color-swatch .swatch::after {
+            content: attr(data-hex);
+            position: absolute;
+            bottom: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            padding: 4px 12px;
+            border-radius: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .color-swatch .swatch:hover::after {
+            opacity: 1;
+        }
+
+        .color-swatch .swatch.light::after {
+            color: rgba(0,0,0,0.7);
+            background: rgba(255,255,255,0.9);
+        }
+
+        .color-swatch .swatch.dark::after {
+            color: rgba(255,255,255,0.9);
+            background: rgba(0,0,0,0.4);
+        }
+
+        .color-name {
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--brand-black);
+            margin-bottom: 2px;
+        }
+
+        .color-hex {
+            font-family: 'Courier New', monospace;
+            font-size: 0.75rem;
+            color: var(--brand-gray);
+        }
+
+        .color-info {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            color: var(--brand-gray);
+            margin-top: 2px;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        .type-section {
+            background: white;
+            border-radius: 24px;
+            padding: var(--space-lg);
+            box-shadow: 0 2px 40px rgba(0,0,0,0.04);
+        }
+
+        .type-specimen {
+            margin-bottom: var(--space-lg);
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+
+        .type-specimen:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .type-label {
+            font-family: var(--font-body);
+            font-size: 0.65rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--brand-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        .type-display {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 400;
+            color: var(--brand-black);
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+        }
+
+        .type-display-alt {
+            font-family: var(--font-body);
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-weight: 300;
+            color: var(--brand-black);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
+
+        .type-weights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-md);
+            margin-top: var(--space-sm);
+        }
+
+        .type-weight {
+            font-size: 1.5rem;
+            color: var(--brand-gray);
+        }
+
+        .type-weight span {
+            display: block;
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--brand-gold);
+            margin-top: 4px;
+            font-family: var(--font-body);
+        }
+
+        /* ===== PATTERNS ===== */
+        .pattern-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .pattern-card {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .pattern-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .pattern-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .pattern-card .pattern-label {
+            background: white;
+            padding: var(--space-sm);
+            text-align: center;
+            font-family: var(--font-body);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--brand-gray);
+        }
+
+        /* ===== BRAND GUIDELINES ===== */
+        .guidelines-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-md);
+        }
+
+        .guideline-card {
+            background: white;
+            border-radius: 16px;
+            padding: var(--space-md);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+        }
+
+        .guideline-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: var(--brand-black);
+            margin-bottom: var(--space-sm);
+        }
+
+        .guideline-card p {
+            font-size: 0.85rem;
+            color: var(--brand-gray);
+            line-height: 1.7;
+        }
+
+        .guideline-card .icon {
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+        }
+
+        /* ===== DOWNLOAD SECTION ===== */
+        .download-section {
+            text-align: center;
+            background: linear-gradient(135deg, var(--brand-blue-dark) 0%, var(--brand-blue) 100%);
+            border-radius: 24px;
+            padding: var(--space-xl) var(--space-lg);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .download-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('patterns/pattern-gold.png');
+            background-size: 300px;
+            background-repeat: repeat;
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        .download-section h2 {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-weight: 400;
+            margin-bottom: var(--space-sm);
+            position: relative;
+        }
+
+        .download-section p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: var(--space-md);
+            position: relative;
+        }
+
+        .download-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: var(--space-sm);
+            position: relative;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: var(--font-body);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .download-btn.primary {
+            background: white;
+            color: var(--brand-blue);
+        }
+
+        .download-btn.primary:hover {
+            background: var(--brand-cream);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+
+        .download-btn.secondary {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .download-btn.secondary:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: var(--space-lg);
+            font-size: 0.75rem;
+            color: var(--brand-gray);
+            letter-spacing: 0.1em;
+        }
+
+        footer .brand-mark {
+            width: 40px;
+            margin-bottom: var(--space-sm);
+            opacity: 0.3;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            section {
+                padding: var(--space-lg) var(--space-md);
+            }
+
+            .hero {
+                padding: var(--space-md);
+            }
+
+            .hero-logo {
+                width: 200px;
+            }
+
+            .color-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <img src="logos/logo-vertical-color.png" 
+             alt="Tâmara Cavalcante Organizer — Logo" 
+             class="hero-logo"
+             id="brand-logo">
+        <div class="hero-divider"></div>
+        <p class="hero-tagline">Personal Organizer</p>
+        <p class="hero-subtitle">Identidade Visual & Brand Kit</p>
+    </header>
+
+    <!-- LOGOS -->
+    <section id="logos">
+        <h1 class="section-title">Logotipos</h1>
+        <p class="section-subtitle">Variações oficiais da marca</p>
+
+        <div class="logo-grid">
+            <div class="logo-card">
+                <img src="logos/logo-vertical-black.png" alt="Logo Vertical Preto">
+                <span class="label">Vertical — Preto</span>
+            </div>
+            <div class="logo-card">
+                <img src="logos/logo-horizontal-black.png" alt="Logo Horizontal Preto">
+                <span class="label">Horizontal — Preto</span>
+            </div>
+            <div class="logo-card">
+                <img src="logos/logo-horizontal-filete-black.png" alt="Logo com Filete Preto">
+                <span class="label">Com Filete — Preto</span>
+            </div>
+            <div class="logo-card">
+                <img src="logos/logo-vertical-color.png" alt="Logo Vertical Colorido">
+                <span class="label">Vertical — Colorido</span>
+            </div>
+            <div class="logo-card">
+                <img src="logos/logo-horizontal-color.png" alt="Logo Horizontal Colorido">
+                <span class="label">Horizontal — Colorido</span>
+            </div>
+            <div class="logo-card">
+                <img src="logos/logo-horizontal-filete-color.png" alt="Logo com Filete Colorido">
+                <span class="label">Com Filete — Colorido</span>
+            </div>
+            <div class="logo-card dark">
+                <img src="logos/logo-vertical-white.png" alt="Logo Vertical Branco">
+                <span class="label">Vertical — Negativo</span>
+            </div>
+            <div class="logo-card blue">
+                <img src="logos/logo-horizontal-white.png" alt="Logo Horizontal Branco">
+                <span class="label">Horizontal — Sobre Azul</span>
+            </div>
+            <div class="logo-card dark">
+                <img src="logos/logo-horizontal-filete-white.png" alt="Logo com Filete Branco">
+                <span class="label">Com Filete — Negativo</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORES -->
+    <section id="cores" class="animate-on-scroll">
+        <h2 class="section-title">Paleta de Cores</h2>
+        <p class="section-subtitle">Sistema cromático da marca</p>
+
+        <div class="palette-section">
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="swatch dark" style="background: #2C59C6;" data-hex="#2C59C6"></div>
+                    <p class="color-name">Azul Royal</p>
+                    <p class="color-hex">#2C59C6</p>
+                    <p class="color-info">RGB: 44, 89, 198 · CMYK: 78, 55, 0, 22</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch dark" style="background: #23385B;" data-hex="#23385B"></div>
+                    <p class="color-name">Azul Profundo</p>
+                    <p class="color-hex">#23385B</p>
+                    <p class="color-info">RGB: 35, 56, 91 · CMYK: 100, 75, 22, 52</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch dark" style="background: #705328;" data-hex="#705328"></div>
+                    <p class="color-name">Dourado</p>
+                    <p class="color-hex">#705328</p>
+                    <p class="color-info">RGB: 112, 83, 40 · CMYK: 0, 26, 64, 56</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch dark" style="background: #5E300A;" data-hex="#5E300A"></div>
+                    <p class="color-name">Marrom Âmbar</p>
+                    <p class="color-hex">#5E300A</p>
+                    <p class="color-info">RGB: 94, 48, 10 · CMYK: 0, 49, 89, 63</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch dark" style="background: #1B1B1A;" data-hex="#1B1B1A"></div>
+                    <p class="color-name">Preto Quente</p>
+                    <p class="color-hex">#1B1B1A</p>
+                    <p class="color-info">RGB: 27, 27, 26</p>
+                </div>
+                <div class="color-swatch">
+                    <div class="swatch light" style="background: #F2F3EE;" data-hex="#F2F3EE"></div>
+                    <p class="color-name">Creme</p>
+                    <p class="color-hex">#F2F3EE</p>
+                    <p class="color-info">RGB: 242, 243, 238</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIPOGRAFIA -->
+    <section id="tipografia" class="animate-on-scroll">
+        <h2 class="section-title">Tipografia</h2>
+        <p class="section-subtitle">Famílias tipográficas da marca</p>
+
+        <div class="type-section">
+            <div class="type-specimen">
+                <p class="type-label">Fonte Principal — Display / Títulos</p>
+                <p class="type-display">Tâmara Cavalcante</p>
+                <p style="font-family: var(--font-display); font-size: 1rem; color: var(--brand-gray); margin-top: 8px;">
+                    Sofia Pro Semi-Bold / Cormorant Garamond — Serif elegante, inspiração clássica
+                </p>
+                <div class="type-weights">
+                    <div class="type-weight" style="font-family: var(--font-display); font-weight: 300;">
+                        Aa <span>Light</span>
+                    </div>
+                    <div class="type-weight" style="font-family: var(--font-display); font-weight: 400;">
+                        Aa <span>Regular</span>
+                    </div>
+                    <div class="type-weight" style="font-family: var(--font-display); font-weight: 600;">
+                        Aa <span>Semi-Bold</span>
+                    </div>
+                    <div class="type-weight" style="font-family: var(--font-display); font-weight: 700;">
+                        Aa <span>Bold</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="type-specimen">
+                <p class="type-label">Fonte Secundária — Corpo / UI</p>
+                <p class="type-display-alt">Organizer Professional</p>
+                <p style="font-family: var(--font-body); font-size: 1rem; color: var(--brand-gray); margin-top: 8px;">
+                    Myriad Pro / Raleway — Sans-serif contemporânea, versatilidade e leitura
+                </p>
+                <div class="type-weights">
+                    <div class="type-weight" style="font-family: var(--font-body); font-weight: 300;">
+                        Aa <span>Light</span>
+                    </div>
+                    <div class="type-weight" style="font-family: var(--font-body); font-weight: 400;">
+                        Aa <span>Regular</span>
+                    </div>
+                    <div class="type-weight" style="font-family: var(--font-body); font-weight: 500;">
+                        Aa <span>Medium</span>
+                    </div>
+                    <div class="type-weight" style="font-family: var(--font-body); font-weight: 700;">
+                        Aa <span>Bold</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PADRONAGEM -->
+    <section id="padronagem" class="animate-on-scroll">
+        <h2 class="section-title">Padronagem</h2>
+        <p class="section-subtitle">Elementos de apoio visual</p>
+
+        <div class="pattern-grid">
+            <div class="pattern-card">
+                <img src="patterns/pattern-gold.png" alt="Padronagem Dourada — Arabescos geométricos">
+                <div class="pattern-label">Arabesco Dourado</div>
+            </div>
+            <div class="pattern-card">
+                <img src="patterns/pattern-tile.png" alt="Padronagem Azulejo — Cerâmica portuguesa com chave">
+                <div class="pattern-label">Azulejo com Chave</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USO DA MARCA -->
+    <section id="diretrizes" class="animate-on-scroll">
+        <h2 class="section-title">Diretrizes de Uso</h2>
+        <p class="section-subtitle">Como aplicar a marca corretamente</p>
+
+        <div class="guidelines-grid">
+            <div class="guideline-card">
+                <div class="icon">🔑</div>
+                <h3>Símbolo da Chave</h3>
+                <p>A chave ornamental dentro da moldura geométrica é o símbolo central da marca. Deve sempre manter suas proporções originais e área de respiro mínima equivalente à metade da sua altura.</p>
+            </div>
+            <div class="guideline-card">
+                <div class="icon">🎨</div>
+                <h3>Cores em Vídeo</h3>
+                <p>Para HeyGen e plataformas de vídeo, usar Azul #2C59C6 como cor principal de destaque e Dourado #705328 como acentuação. Backgrounds claros usam #F2F3EE.</p>
+            </div>
+            <div class="guideline-card">
+                <div class="icon">📐</div>
+                <h3>Área Segura</h3>
+                <p>Em vídeos, manter o logo dentro da zona segura de 80% do frame. Nunca posicionar sobre áreas de alta complexidade visual sem backdrop semitransparente.</p>
+            </div>
+            <div class="guideline-card">
+                <div class="icon">✨</div>
+                <h3>Tom de Marca</h3>
+                <p>Elegância, sofisticação, método e confiança. A comunicação visual deve transmitir organização premium, como um espaço transformado com cuidado artesanal.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="animate-on-scroll" style="max-width: 100%; padding: var(--space-xl) var(--space-lg);">
+        <div class="download-section">
+            <h2>Assets Prontos para Importação</h2>
+            <p>Baixe os assets organizados para HeyGen, Canva, e outras plataformas de criação de conteúdo.</p>
+            <div class="download-links">
+                <a href="brand-kit.json" class="download-btn primary" download>
+                    📋 Brand Kit JSON
+                </a>
+                <a href="logos/" class="download-btn secondary">
+                    🖼️ Logos PNG
+                </a>
+                <a href="patterns/" class="download-btn secondary">
+                    🔲 Padronagens
+                </a>
+                <a href="https://github.com/bicalho743/Kit_marca_Tamara_Cavalcante" class="download-btn secondary">
+                    📂 Repositório GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <img src="logos/logo-symbol-black.png" alt="" class="brand-mark">
+        <p>© 2026 Tâmara Cavalcante Organizer — Todos os direitos reservados</p>
+        <p style="margin-top: 8px; font-size: 0.65rem;">Brand Kit preparado para importação em plataformas digitais</p>
+    </footer>
+
+    <script>
+        // Scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+        // Copy hex on click
+        document.querySelectorAll('.swatch').forEach(swatch => {
+            swatch.addEventListener('click', () => {
+                const hex = swatch.dataset.hex;
+                navigator.clipboard.writeText(hex).then(() => {
+                    swatch.style.outline = '3px solid rgba(44,89,198,0.5)';
+                    setTimeout(() => swatch.style.outline = 'none', 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
